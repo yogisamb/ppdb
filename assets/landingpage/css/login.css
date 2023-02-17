@@ -1,0 +1,12 @@
+@import url('./style.css');
+@import url('./utilities.css');
+@import url('./responsive.css');
+
+/* LOGIN */
+.login {
+  background-color: #e1e1e159;
+}
+
+.login .card {
+  border-radius: 1rem;
+}

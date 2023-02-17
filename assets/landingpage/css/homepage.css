@@ -1,0 +1,33 @@
+@import url('./style.css');
+@import url('./utilities.css');
+@import url('./responsive.css');
+
+header.jumbotron .carousel.slide .carousel-inner {
+  height: calc(100vh - 7.5rem);
+  max-height: 45rem;
+}
+header.jumbotron .carousel.slide .carousel-inner .carousel-item {
+  height: 100%;
+}
+.carousel-item_image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel_slide {
+  position: absolute;
+  inset: 0;
+  background-color: #0e0e0e33;
+  z-index: 3;
+}
+.tab-content .tab-pane.tab_panel {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}

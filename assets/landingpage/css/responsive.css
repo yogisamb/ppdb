@@ -1,0 +1,21 @@
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+  .navbar-toggler_button {
+    display: block;
+  }
+
+  .container.containers {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navbar .container {
+    padding: 0.25rem 0;
+  }
+  .container.containers {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

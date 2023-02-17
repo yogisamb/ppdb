@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | PAUD Bintang Juara</title>
+
+  <!-- styles link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="./assets/vendor/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet" />
+  <link href="./assets/vendor/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet" />
+  <link href="./assets/vendor/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/public/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- start contact -->
+  <div class="header d-none d-md-block">
+    <div class="container-fluid p-3">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex align-items-center gap-2 border-end pe-3">
+          <i class="fa-regular fa-map"></i>
+          <p class="fs-7">
+            Jl. Dewi Sartika, Sukorejo, Gunung Pati, Semarang, Jawa Tengah
+            50221
+          </p>
+        </div>
+        <div class="d-none d-xl-flex align-items-center gap-2 border-end px-3">
+          <i class="fa-regular fa-envelope"></i>
+          <a class="text-white fs-7" href="mailto:sdislambintangjuara@gmail.com">sdislambintangjuara@gmail.com</a>
+        </div>
+        <div class="d-flex align-items-center gap-2 px-3">
+          <i class="fa-regular fa-phone"></i>
+          <a class="text-white fs-7" href="tel:+62823-1493-0833">+62823-1493-0833</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact -->
+
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg bg-light py-2 px-3 px-sm-2 sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <span class="navbar-brand_caption">Bintangjuara</span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav align-items-center">
+          <a class="nav-link" href="index.html">Beranda</a>
+          <a class="nav-link" href="/form.html">Form</a>
+          <a class="nav-link" href="/datatables.html">Data table</a>
+          <div class="separator"></div>
+          <a class="nav-link" href="/index.html">Daftar</a>
+          <div>
+            <a class="btn btn-warning button-rounded transition-all-200 fs-7 ms-2" href="/login.html">Login</a>
+          </div>
+        </div>
+      </div>
+      <div role="button" class="navbar-toggler_button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- START LOGIN -->
+  <main class="login">
+    <section class="py-4">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card card_login shadow-lg">
+              <form method="POST" class="card-body p-5">
+                <h4 class="mb-12 text-center">Masuk Akun PSB</h4>
+                <p class="mb-30 fs-7 text-center">
+                  Masukkan email dan password yang terdaftar untuk melanjutkan
+                  akses panelmu
+                </p>
+                <div class="form-outline mb-3">
+                  <label class="form-label form_label" for="email">Email</label>
+                  <input type="email" id="email" name="email" class="form-control form_control" required />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label form_label" for="password">Password</label>
+                  <input type="password" id="password" name="password" class="form-control form_control" />
+                </div>
+                <button class="d-flex btn btn-primary btn_rounded_sm w-100 justify-content-center" type="submit">
+                  Masuk
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- END LOGIN -->
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

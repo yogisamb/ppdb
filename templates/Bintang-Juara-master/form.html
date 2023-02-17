@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSB | PAUD Bintang Juara</title>
+
+  <!-- styles link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="./assets/vendor/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet" />
+  <link href="./assets/vendor/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet" />
+  <link href="./assets/vendor/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/homepage.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/public/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- start contact -->
+  <div class="header d-none d-md-block">
+    <div class="container-fluid p-3">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex align-items-center gap-2 border-end pe-3">
+          <i class="fa-regular fa-map"></i>
+          <p class="fs-7">
+            Jl. Dewi Sartika, Sukorejo, Gunung Pati, Semarang, Jawa Tengah
+            50221
+          </p>
+        </div>
+        <div class="d-none d-xl-flex align-items-center gap-2 border-end px-3">
+          <i class="fa-regular fa-envelope"></i>
+          <a class="text-white fs-7" href="mailto:sdislambintangjuara@gmail.com">sdislambintangjuara@gmail.com</a>
+        </div>
+        <div class="d-flex align-items-center gap-2 px-3">
+          <i class="fa-regular fa-phone"></i>
+          <a class="text-white fs-7" href="tel:+62823-1493-0833">+62823-1493-0833</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact -->
+
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg bg-light py-2 px-3 px-sm-2 sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <span class="navbar-brand_caption">Bintangjuara</span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav align-items-center">
+          <a class="nav-link" href="index.html">Beranda</a>
+          <a class="nav-link active" href="/form.html">Form</a>
+          <a class="nav-link" href="/datatables.html">Data table</a>
+          <div class="separator"></div>
+          <a class="nav-link" href="/index.html">Daftar</a>
+          <div>
+            <a class="btn btn-warning button-rounded transition-all-200 fs-7 ms-2" href="/login.html">Login</a>
+          </div>
+        </div>
+      </div>
+      <div role="button" class="navbar-toggler_button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <main>
+    <section class="my-5 container containers">
+      <h2 class="text-center mb-4">Form System</h2>
+      <form class="shadow rounded-3 card">
+        <div class="card-header py-3">
+          <h6>Example Form</h6>
+        </div>
+        <div class="row card-body">
+          <div class="col-12 col-sm-6">
+            <div class="mb-3">
+              <label class="form-label form_label" for="text">Input Text</label>
+              <input type="text" id="text" name="text" class="form-control form_control"
+                placeholder="Masukkan input text" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label form_label" for="email">Input Email</label>
+              <input type="email" id="email" name="email" class="form-control form_control"
+                placeholder="Masukkan input email" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label form_label" for="date">Input Date</label>
+              <input type="date" id="date" name="date" class="form-control form_control" required />
+            </div>
+            <!-- input number -->
+            <div class="mb-3">
+              <label class="form-label form_label" for="number">Input Number</label>
+              <input type="number" id="number" name="number" class="form-control form_control"
+                placeholder="Masukkan input number" required />
+            </div>
+            <!-- input file -->
+            <div class="mb-3">
+              <label class="form-label form_label" for="file">Input File</label>
+              <input type="file" id="file" name="file" class="form-control form_control" required />
+            </div>
+            <!-- select -->
+            <div class="mb-3 select2JS">
+              <label class="form-label form_label" for="select">Select Basic Single</label>
+              <div>
+                <select class="select2BasicSingle form-control" name="select">
+                  <option value="IDN">Indonesia</option>
+                  <option value="ENG">England</option>
+                  <option value="USA">United States</option>
+                  <option value="JPN">Japan</option>
+                  <option value="KOR">Korea</option>
+                  <option value="DEN">Denmark</option>
+                  <option value="GER">Germany</option>
+                  <option value="FRA">France</option>
+                  <option value="ITA">Italy</option>
+                  <option value="RUS">Russia</option>
+                  <option value="CHN">China</option>
+                  <option value="AUS">Australia</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3 select2MJS">
+              <label class="form-label form_label" for="select">Select Multi-Box</label>
+              <div>
+                <select class="select2MultiBox form-control form_control" name="select[]" multiple="multiple">
+                  <option value="IDN">Indonesia</option>
+                  <option value="ENG">England</option>
+                  <option value="USA">United States</option>
+                  <option value="JPN">Japan</option>
+                  <option value="KOR">Korea</option>
+                  <option value="DEN">Denmark</option>
+                  <option value="GER">Germany</option>
+                  <option value="FRA">France</option>
+                  <option value="ITA">Italy</option>
+                  <option value="RUS">Russia</option>
+                  <option value="CHN">China</option>
+                  <option value="AUS">Australia</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="mb-3">
+              <label class="form-label form_label" for="password">Input Password</label>
+              <input type="password" id="password" name="password" class="form-control form_control"
+                placeholder="Masukkan input password" required />
+            </div>
+            <!-- checkbox -->
+            <div class="mb-3">
+              <label class="form-label form_label">Input Checkbox</label>
+              <div class="form-check form_check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+              </div>
+              <div class="form-check form_check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                <label class="form-check-label" for="flexCheckChecked">Checked checkbox</label>
+              </div>
+              <div class="form-check form_check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled />
+                <label class="form-check-label" for="flexCheckDisabled">Disabled checkbox</label>
+              </div>
+              <div class="form-check form_check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked
+                  disabled />
+                <label class="form-check-label" for="flexCheckCheckedDisabled">Checked disabled checkbox</label>
+                <div class="invalid-feedback">
+                  Example invalid feedback text
+                </div>
+              </div>
+            </div>
+            <!-- select -->
+            <div class="mb-3">
+              <label class="form-label form_label" for="select">Input Select</label>
+              <select class="form-select form_select" id="select" name="select" required>
+                <option value="" disabled selected>
+                  Pilih salah satu
+                </option>
+                <option value="1">Pilihan 1</option>
+                <option value="2">Pilihan 2</option>
+                <option value="3">Pilihan 3</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label form_label" for="textarea">Input Textarea</label>
+              <textarea id="textarea" name="textarea" class="form-control form_control"
+                placeholder="Masukkan input textarea" cols="30" rows="5" required></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Start FOOTER -->
+  <footer>
+    <div class="container containers">
+      <div class="row flex-column flex-sm-row mb-5">
+        <div class="col-12 col-lg-5 fs-7 mb-4">
+          <div class="mb-3">
+            <img class="logo" src="./assets/images/bintang-juara-logo.png" alt="logo" title="logo" />
+          </div>
+          <p>
+            PAUD ISLAM BINTANG JUARA adalah Islamic Character Based school
+            yang mengedepankan pendidikan diniyyah seperti pembiasaan ibadah,
+            tahsin & tahfidz, serta penanaman adab dan akhlak mulia.
+          </p>
+          <div class="mt-2 d-flex location_foot">
+            <i class="fa-solid fa-location-dot me-2 fs-18"></i>
+            <p class="">
+              Jl. Dewi Sartika, Sukorejo, Gunung Pati, Semarang, Jawa Tengah
+              50221
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex justify-content-lg-end gap-5 link_foot">
+            <ul class="p-0 mb-0">
+              <li class="fw-semibold">Akademik</li>
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+            </ul>
+            <ul class="p-0 mb-0">
+              <li class="fw-semibold">Koneksi</li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 4</a></li>
+              <li><a href="#">Menu 5</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="fs-7 mb-3 mb-md-0 text-center text-md-start">
+          Copyright © 2022
+          <a href="/index.html" class="text-white fs-7">psbbintangjuara.com</a>. All rights reserved
+        </p>
+        <ul class="d-flex align-items-center flex-wrap gap-3 mb-0 p-0">
+          <li class="list-unstyled">
+            <a class="text-white text-decoration-none" href="mailto:sdislambintangjuara@gmail" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" data-bs-title="Email">
+              <i class="fa-regular fa-envelope fs-6"></i>
+            </a>
+          </li>
+          <li class="list-unstyled">
+            <a class="text-white text-decoration-none" href="https://www.facebook.com/sdislambintangjuara"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Facebook">
+              <i class="fa-brands fa-facebook fs-6"></i>
+            </a>
+          </li>
+          <li class="list-unstyled">
+            <a class="text-white text-decoration-none" href="https://www.instagram.com/sdislambintangjuara/"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Instagram">
+              <i class="fa-brands fa-instagram fs-6"></i>
+            </a>
+          </li>
+          <li class="list-unstyled">
+            <a class="text-white text-decoration-none" href="https://www.youtube.com/channel/UCmKyv8sPPwrv-LyDaES6L8w"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Youtube">
+              <i class="fa-brands fa-youtube fs-6"></i>
+            </a>
+          </li>
+          <li class="list-unstyled">
+            <a class="text-white text-decoration-none" href="tel:+62823-1493-0833" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" data-bs-title="Telephone">
+              <i class="fa-regular fa-phone fs-6"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- End FOOTER -->
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      // configure select 2 js
+      $('.select2BasicSingle').select2({
+        placeholder: 'Pilih Negara Tujuan',
+      });
+      $('.select2MultiBox').select2({
+        placeholder: 'Pilih Negara Tujuan',
+      });
+
+      // change button dropdown select 2 js
+      $('.select2JS .select2-selection__arrow b').remove();
+      $('.select2JS .select2-selection__arrow').append(
+        '<i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 12px; fill: #333232;"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></i>'
+      );
+    });
+  </script>
+</body>
+
+</html>
